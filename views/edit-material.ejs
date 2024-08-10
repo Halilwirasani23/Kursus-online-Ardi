@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Edit Materi</title>
+</head>
+<body>
+    <header>
+        <h1>Edit Materi</h1>
+    </header>
+    <form action="/course/<%= courseId %>/material/edit/<%= material.id %>" method="POST">
+        <label for="title">Judul Materi:</label>
+        <input type="text" id="title" name="title" value="<%= material.title %>" required>
+        
+        <label for="content">Deskripsi Materi:</label>
+        <textarea id="content" name="content" required><%= material.content %></textarea>
+        
+        <label for="embed_url">URL Embed:</label>
+        <input type="text" id="embed_url" name="embed_url" value="<%= material.embed_url %>">
+        
+        <button type="submit">Simpan Perubahan</button>
+    </form>
+    <a href="/course/<%= courseId %>/materials" class="button">Kembali ke Daftar Materi</a>
+</body>
+</html>

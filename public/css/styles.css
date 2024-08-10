@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Tambahkan gaya CSS ini di public/css/styles.css */
+
+button, .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover, .button:hover {
+    background-color: #0056b3;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+}
+
+.course-buttons {
+    margin-top: 10px;
+}
+/* Tambahkan gaya CSS ini di public/css/styles.css */
+
+header {
+    background-color: #007bff; /* Warna biru */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 2px solid #0056b3; /* Warna biru yang lebih gelap untuk garis bawah */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+/* Tambahkan gaya CSS ini di public/css/styles.css */
+
+.button {
+    background-color: #007bff; /* Warna biru */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #0056b3; 
+}
+
+button {
+    background-color: #007bff; /* Warna biru */
+    background-color: 5; /* Warna merah */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff; /* Warna biru */
+
+}
+
+/* Gaya tombol biru */
+.button {
+    display: inline-block;
+    background-color: #007bff; /* Warna biru */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
+

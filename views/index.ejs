@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Kursus Online</title>
+</head>
+<body>
+    <header>
+    <h1> Selamat Datang Di Courses MR Ardi </h1>
+    </header>
+    <h2>Daftar Kursus</h2>
+    <a href="/course/new" class="button">Tambah Kursus Baru</a>
+    <div class="courses-container">
+        <% courses.forEach(course => { %>
+            <div class="course-item">
+                <h2><%= course.title %></h2>
+                <p><%= course.description %></p>
+                <p>Durasi: <%= course.duration %> jam</p>
+                <div class="course-buttons">
+                    <a href="/course/edit/<%= course.id %>" class="button">Edit</a>
+                    <a href="/course/delete/<%= course.id %>" class="button">Hapus</a>
+                    <a href="/course/<%= course.id %>/materials" class="button">Lihat Materi</a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+</html>

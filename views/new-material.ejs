@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Tambah Materi Baru</title>
+</head>
+<body>
+    <h1>Tambah Materi Baru</h1>
+    <form action="/course/<%= courseId %>/material/new" method="POST">
+        <label for="title">Judul Materi:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="content">Konten Materi:</label>
+        <textarea id="content" name="content" required></textarea>
+        
+        <label for="embed_url">URL Embed:</label>
+        <input type="url" id="embed_url" name="embed_url">
+        
+        <button type="submit">Tambah Materi</button>
+    </form>
+</body>
+</html>

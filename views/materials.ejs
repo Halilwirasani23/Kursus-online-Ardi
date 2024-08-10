@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Materi Kursus</title>
+</head>
+<body>
+    <header>
+        <h1>Materi Kursus</h1>
+    </header>
+    <a href="/course/<%= courseId %>/material/new" class="button">Tambah Materi</a>
+    <ul>
+        <% if (materials.length > 0) { %>
+            <% materials.forEach(material => { %>
+                <li>
+                    <h2><%= material.title %></h2>
+                    <p><%= material.content %></p>
+                    <% if (material.embed_url) { %>
+                        <iframe src="<%= material.embed_url %>" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                    <% } %>
+                    <a href="/course/<%= courseId %>/material/edit/<%= material.id %>" class="button">Edit</a>
+                    <a href="/course/<%= courseId %>/material/delete/<%= material.id %>" class="button" onclick="return confirm('Apakah Anda yakin ingin menghapus materi ini?')">Hapus</a>
+                </li>
+            <% }) %>
+        <% } else { %>
+            <li>Tidak ada materi yang tersedia untuk kursus ini.</li>
+        <% } %>
+    </ul>
+    <a href="/" class="button">Kembali ke Daftar Kursus</a>
+</body>
+</html>
